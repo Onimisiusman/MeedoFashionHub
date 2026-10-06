@@ -15,16 +15,17 @@ body {
     background: #124a70;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center;  */
     position: relative;
     padding: 0 25px;
 }
 
 .nav-links {
-    position: absolute;
-    left: 25px;
+    position: relative;
+    left: 30%;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     gap: 25px;
 }
 
@@ -37,14 +38,20 @@ body {
 
 .logo {
     font-family: Georgia, serif;
-    font-style: italic;
+    font-style: initial;
     font-size: 13px;
     color: #ffffff;
+    
 }
 
 #menu-toggle {
     display: none;
 }
+.men {
+    display: none;
+}
+
+
 
 .menu-btn {
     position: absolute;
@@ -94,7 +101,7 @@ body {
     background: #f2f2f2;
 }
 
-#menu-toggle:checked ~ .dropdown {
+#menu-toggle:checked  .dropdown {
     display: block;
 }
 
